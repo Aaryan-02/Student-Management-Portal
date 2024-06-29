@@ -4,11 +4,12 @@ const AccountCreation = ({ addUser }) => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [course, setCourse] = useState('');
 
   const validateInputs = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!username.trim() || !email.trim() || !phone.trim()) {
+    if (!username.trim() || !email.trim() || !phone.trim() || !course.trim()) {
       alert('Please fill in all fields.');
       return false;
     }
@@ -26,7 +27,7 @@ const AccountCreation = ({ addUser }) => {
       if (validateInputs()) {
         alert('Creating account...');
         await new Promise(resolve => setTimeout(resolve, 2000));
-        const newUser = { username, email, phone, id: Date.now() };
+        const newUser = { username, email, phone, course, id: Date.now() };
         addUser(newUser);
         alert('Account created successfully!');
       }
@@ -52,6 +53,10 @@ const AccountCreation = ({ addUser }) => {
         </div>
         <div>
           <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} name='phone' className='bg-gray-700 mb-4 px-4 py-3 w-full rounded-lg text-white placeholder-gray-400 outline-none' placeholder='Phone'
+          />
+        </div>
+        <div>
+          <input type="text" value={course} onChange={(e) => setCourse(e.target.value)} name='course' className='bg-gray-700 mb-4 px-4 py-3 w-full rounded-lg text-white placeholder-gray-400 outline-none' placeholder='Course'
           />
         </div>
         <div className='flex justify-center mt-6'>
