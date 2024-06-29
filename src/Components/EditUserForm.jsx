@@ -42,6 +42,10 @@ const EditUserForm = ({ user, onSave, onCancel }) => {
                     <input type="text" name="phone" value={editedUser.phone} onChange={handleChange} className="text-md font-semibold text-black px-2 py-1"
                     />
                 </div>
+                <div className="mb-4">
+                    <span className="text-md font-bold text-gray-300">Course:</span>
+                    <input type="text" name="course" value={editedUser.course || ''} onChange={handleChange} className="text-md font-semibold text-black px-2 py-1" />
+                </div>
                 <div className="flex justify-center mt-6">
                     <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded" onClick={handleSave}>
                         Save
