@@ -21,7 +21,7 @@ const UserTable = ({ users, setUsers }) => {
 
   const filterUsers = (users, term) => {
     return users.filter((user) => {
-      const searchableColumns = ['username', 'email', 'phone'];
+      const searchableColumns = ['username', 'email', 'phone', 'course'];
 
       return searchableColumns.some((column) => user[column].toLowerCase().includes(term.toLowerCase()));
     });
@@ -110,6 +110,7 @@ const UserTable = ({ users, setUsers }) => {
               <Menu column="username" sortOrder={sortOrder} handleSortOption={(option) => handleSortOption(option, 'username')}>Username</Menu>
               <Menu column="email" sortOrder={sortOrder} handleSortOption={(option) => handleSortOption(option, 'email')}>Email</Menu>
               <Menu column="phone" sortOrder={sortOrder} handleSortOption={(option) => handleSortOption(option, 'phone')}>Phone</Menu>
+              <Menu column="phone" sortOrder={sortOrder} handleSortOption={(option) => handleSortOption(option, 'course')}>Course</Menu>
               <th className="py-2 px-2 sm:py-4 sm:px-4">Action</th>
             </tr>
           </thead>
@@ -120,6 +121,7 @@ const UserTable = ({ users, setUsers }) => {
                 <td className="px-2 py-2 sm:px-3 sm:py-3">{user.username}</td>
                 <td className="px-2 py-2 sm:px-3 sm:py-3">{user.email}</td>
                 <td className="px-2 py-2 sm:px-3 sm:py-3">{user.phone}</td>
+                <td className="px-2 py-2 sm:px-3 sm:py-3">{user.course}</td>
                 <td className="px-2 py-2 sm:px-3 sm:py-3">
                   <button className="text-blue-600 mr-2">
                     <span className="border border-blue-600 hover:border-blue-800 hover:text-blue-900 px-2 py-1 rounded transition duration-300 font-bold w-10" onClick={() => handleEdit(user.id)}>
