@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:GMT+5:30
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20240629T143000
+DTEND;TZID=Asia/Kolkata:20240629T150000
+DTSTAMP:20240629T081402Z
+ORGANIZER;CN=Sreejith Murali:mailto:sreejith.murali8091@gmail.com
+UID:2p4pn3he43vtjarls6l898nnn5@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=aaryanpinto.sae.comp@gmail.com;X-NUM-GUESTS=0:mailto:aaryanpinto.sa
+ e.comp@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Sreejith Murali;X-NUM-GUESTS=0:mailto:sreejith.murali8091@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jagruthividya.3699@gmail.com;X-NUM-GUESTS=0:mailto:jagruthividya.36
+ 99@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/xsb-skry-oon
+X-MICROSOFT-CDO-OWNERAPPTID:1446812677
+CREATED:20240629T081400Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/xs
+ b-skry-oon\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240629T081400Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:NewOwl AI Interaction with Aaryan
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
